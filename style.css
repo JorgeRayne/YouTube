@@ -1,0 +1,283 @@
+body{
+    margin: 0;
+    padding-top: 60px;
+    padding-left: 89px;
+    padding-right: 20px;
+    background-color: rgb(248, 248, 248);
+}
+p {
+    font-family: Roboto, Arial;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.thumbnail {
+    width: 100%;
+}
+
+.search-bar {
+    display: block; 
+}
+
+.video-title {
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.profile-picture {
+    width: 40px;
+    border-radius: 50px;
+}
+.video-author,
+.video-stats {
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+}
+
+.video-author {
+    margin-bottom: 4px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+
+.header {
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(228, 228, 228);
+    z-index: 100;
+}
+.left-section{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.humburger-menu{
+    height: 20px;
+    margin: 0 24px 0 20px;
+}
+.youtube-logo{
+    height: 20px;
+}
+
+.right-section{
+    margin-right: 24px;
+    width:190px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+.middle-section{
+    flex: 1;
+    margin-left: 70px;
+    margin-right:35px ;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+}
+.search-bar{
+    flex: 1;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(170, 167, 167);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    width: 0;
+}
+
+.search-bar::placeholder{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+.search-button{
+    height: 40px;
+    width: 66px;
+    background-color: rgb(245, 244, 244);
+    border: 1px solid rgb(170, 167, 167);
+    margin-left: -1px;
+    margin-right: 10px;
+    position: relative;
+}
+.search-button .tooltip, 
+.voice-search-button .tooltip, 
+.upload-icon-container .tooltip,
+.youtube-app-container .tooltip,
+.notication-container .tooltip{
+    background-color: gray;
+    position: absolute;
+    color: white;
+    padding: 4px 8px 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition:  opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip, 
+.upload-icon-container:hover .tooltip,
+.youtube-app-container:hover .tooltip,
+.notication-container:hover .tooltip{
+    opacity: 1;
+}
+.search-button, 
+.voice-search-button, 
+.upload-icon-container,
+.youtube-app-container,
+.notication-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+.search-icon{
+    height: 25px;
+}
+
+.voice-search-button{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: 0;
+    background-color: rgb(248, 248, 248);
+}
+.voice-search-icon{
+    height: 25px;
+}
+
+.upload-icon{
+    height: 24px;
+}
+.youtube-apps-icon{
+    height: 24px;
+}
+.notifications-icon{
+    height: 24px;
+}
+.current-user-picture{
+    height: 32px;
+    border-radius: 16px;
+}
+
+.sidebar{
+    background-color: #fff;
+    position: fixed;
+    top: 55px;
+    width: 72px;
+    bottom: 0;
+    left: 0;
+    z-index: 200;
+    padding-top: 8px;
+}
+.thumbnail-row {
+    margin-bottom: 12px;
+    position: relative;
+}
+.video-time{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 3px 6px 4px 6px;
+
+}
+.notifications-icons-container{
+    position: relative;
+}
+
+.notification-count{
+    position: absolute;
+    background-color: rgb(200, 0, 0);
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    top: -5px;
+    font-size: 12px;
+    right: -5px;
+    padding: 1px 2px 1px 2px;
+    border-radius: 50px;
+}
+.sidebar-link{
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.sidebar-link div{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.sidebar-link:hover{
+    background-color: rgb(222, 222, 222);
+}
+
+.sidebar-link img{
+    height: 24px;
+    margin-bottom: 6px;
+}
+.channel-picture{
+    position: relative;
+}
+.profile-preview{
+    position: absolute;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 8px 8px 25px 5px;
+    width: 190px;
+    z-index: 4100;
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+.profile-preview img{
+    width: 80px;
+    border-radius: 40px;
+}
+.profile-preview div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    font-size: 14px;
+    gap: 8px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.channel-picture:hover .profile-preview{
+    opacity: 1;
+}
